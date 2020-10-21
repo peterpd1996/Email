@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            background-color: rgb(233 233 233);
+            max-width: 100%;
+        }
+        .header {
+            height: 55px;
+            display: inline-block;
+            width: 100%;
+            font-size: 1.1em;
+        }
+        .left > div,.right > div {
+            padding: 3px 0px;
+        }
+        .strong-first {
+            color: #64d85c;
+        }
+        .button-check {
+            color: #fff;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            padding: 11px 25px 11px 25px;
+            background-color: #53b657;
+            border-color: #53b657;
+            white-space: initial;
+            max-width: 330px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        .title-box {
+            height: 27px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            margin-top: 1.8em;
+            line-height: 27px;
+        }
+        .title-box .title-info {
+            color: #949494;
+            padding: 0px 7px 21px 0px;
+            font-weight: 600;
+            font-style: italic;
+            background: white;
+            font-size: 0.9em;
+        }
+
+        .table tr:hover {background-color: #ddd;}
+        .title-box .title-info-table-right {
+            border-bottom: 1px solid #949494;
+            margin-left: 0px;
+            flex: 0 0 70%;
+        }
+        .table-payment-info thead tr th {
+            font-size: 0.9em;
+            padding: 5px 0px;
+        }
+        .table-payment-info tbody tr td {
+           padding:5px 0px;
+            font-size: 1em;
+
+        }
+
+        .left{
+            float: left;
+            width: 50%;
+            text-align: left
+        }
+
+        .right {
+            float: right ;
+            width: 50%;
+            text-align: right
+
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+        }
+        .dashedSpace {
+            width: 100%;
+            height: 1px;
+            margin-top: 24px;
+            background-image: linear-gradient(to right, #bec5c7 0%, #bec5c7 50%, transparent 50%);
+            background-size: 24px 1px;
+            background-repeat: repeat-x;
+        }
+        .footer {
+            height: 80px;
+            background-color: #53b657;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            border-collapse: collapse;
+            box-sizing: border-box;
+        }
+        .table td, .table th {
+            white-space: nowrap;
+            word-break: keep-all;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+            padding: 6px 1.1em 6px 1.1em;
+            font-size: 0.9em;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        .dashedSpace {
+            width: 100%;
+            height: 1px;
+            margin-top: 24px;
+            background-image: linear-gradient(to right, #bec5c7 0%, #bec5c7 50%, transparent 50%);
+            background-size: 24px 1px;
+            background-repeat: repeat-x;
+        }
+
+        @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+            /* Force table to not be like tables anymore */
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+                text-align: left;
+                margin-top: 1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <table width="100%" align="center" cellpadding="0" cellspacing="0"
+           style="width:100%;margin: 0 auto;background-color: #f8fafc;max-width: 800px;box-sizing: border-box;">
+        <tr>
+            <td align="center" width="100%" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <div class="main_" style="background-color: #ffff;padding: 2em;box-sizing: border-box; width: 100%;">
+                    <div class="header" style="display: inline-block;width: 100%;">
+                        <div style="float: left;width:50%;height:100%;text-align: left">
+                            <img style="width: 20%;height:100%; object-fit: contain"
+                                 src="https://dev.cdn.yaha.vn/image/2020/9/22/panama.png">
+                        </div>
+                        <div  style="float: left;width:50%;text-align: right">
+                            <img style="width: 15%;height: 30%; object-fit: contain"
+                                 src="https://i.ibb.co/fn3TXJg/yaha.png">
+                        </div>
+                    </div>
+                    <div class="content" style="font-size: 1.1em; ">
+                        <div style="text-align: left;">
+                            <div class="receiver" style="margin-top: 2em">
+                                <strong style="font-size: 0.9em">Kính gửi khách hàng: NGUYỄN NGỌC ANH</strong>
+                            </div>
+                            <div style="margin: 10px 0px">
+                                <strong class="strong-first">Bảo Kim</strong> xin trân trọng thông báo quý khách đã
+                                thanh toán thành công đơn hàng <strong>MD10018579</strong> qua dịch vụ <strong
+                                    class="font-italic">Yaha by Bảo Kim</strong>. Đơn hàng dự kiến được giao vào ngày
+                                30/10/2020
+                            </div>
+                        </div>
+                        <div style="text-align: center">
+                            <a style="text-decoration: none" href="#" class="button-check">
+                                Kiểm tra trạng thái đơn hàng
+                            </a>
+                        </div>
+                        <div class=" title-box">
+                            <span class="title-info">Thông tin đơn hàng</span>
+                        </div>
+                        <div style="display: inline-block !important;width: 100%;margin-top: 20px;">
+                            <div class="left" >
+                                <b>Thông tin thanh toán</b>
+                                <div>Nguyễn Ngọc Anh</div>
+                                <div>tungduongpd1996@gmail.com</div>
+                                <div>09771234567</div>
+                            </div>
+                            <div class="right" >
+                                <b>Thông tin thanh toán</b>
+                                <div>Nguyễn Ngọc Anh</div>
+                                <div>102, thái thịnh, đống đa</div>
+                                <div>09771234567 </div>
+                            </div>
+                        </div>
+                        <div class="dashedSpace" style="width: 100%"></div>
+                        <div class="paymet" style="display: inline-block;width: 100%;margin-top: 20px;text-align: left;">
+                            <div style="float: left;margin-right: 40px">
+                                <div><b>Khoản đã thanh toán</b></div>
+                                <div><b>Phương thức thanh toán</b></div>
+                                <div><b>Phí vận chuyển</b></div>
+                            </div>
+                            <div style="float: left;">
+                                <div>250.000đ</div>
+                                <div>250.000đ</div>
+                                <div>250.000đ</div>
+                            </div>
+                        </div>
+
+                        <div class="title-box">
+                            <span class="title-info">Chi tiết đơn hàng</span>
+                        </div>
+
+                        <div >
+                            <table class="table" style="margin-bottom: 1rem;background-color: transparent;margin-top: 20px;text-align: center">
+                                <tr style=" background-color: #53b657;color: #fff;">
+                                    <th>Sản phẩm</th>
+                                    <th >Số lượng</th>
+                                    <th >Đơn giá</th>
+                                    <th>Giảm giá</th>
+                                    <th >Thành tiền</th>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ao the thao mua dong gio</strong></td>
+                                    <td>1</td>
+                                    <td>100.000</td>
+                                    <td>0</td>
+                                    <td>100.000</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="width: 100%;display: inline-block">
+                            <div style="float: right;width: 30%; text-align: right">
+                                <div style="padding-top: 12px">250.000</div>
+                                <div  style="padding-top: 12px">0</div>
+                                <div  style="padding-top: 12px"> 20.000</div>
+                                <div  style="padding: 12px 0px 12px 12px;background: #f2f2f2;margin-top: 10px;font-weight: bold">270.000</div>
+                            </div>
+                            <div style="float: right;width: 70%;text-align: right;">
+                                <div  style="padding-top: 12px">Tổng giá trị sản phẩm</div>
+                                <div  style="padding-top: 12px">Giảm giá</div>
+                                <div  style="padding-top: 12px">Phí vận chuyển</div>
+                                <div   style="padding: 12px 0px 12px 12px;background: #f2f2f2;margin-top: 10px;font-weight: bold">Tổng đơn hàng</div>
+                            </div>
+                        </div>
+                        <div style="text-align: right;margin-top: 52px;font-weight: bold;font-style: italic;font-size: 0.8em">
+                            Bảo kim cám ơn quý ơn quý khách!
+                        </div>
+                        <div class="footer" style="margin-top: 1.7em; width: 100%;" >
+                            <img style="display: block;margin: 0 auto;" src="https://thuchiho.baokim.vn/assets/landing/img/logo.png">
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
